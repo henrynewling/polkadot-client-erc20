@@ -1,0 +1,33 @@
+.App {
+    text-align: center;
+}
+
+.methods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 20px;
+}
+.method {
+    min-height: 100px;
+    min-width: 300px;
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.method button {
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.methods input {
+    margin-bottom: 20px;
+}
