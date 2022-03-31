@@ -146,7 +146,7 @@ function App() {
     try {
       console.log(checkBalanceAddress, 'Bal')
       setLoading('Reading...');
-      const {result,output} = await contract.query.balanceOf(userWallet,{value, gasLimit: -1}, checkBalanceAddress);
+      const {result,output} = await contract.query.balanceOf(userWallet,{value, gasLimit}, checkBalanceAddress);
       if(result.isOk){
         setToken({
           ...token,
